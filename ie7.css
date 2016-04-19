@@ -1,0 +1,32 @@
+.cal td > span {
+  display: block;
+  position: relative; /* Allows to position inner span w.r.t this span. */
+  border-style: solid;
+  border-color: transparent;
+  zoom: 1;
+}
+
+.cal-viewport {
+  position: relative;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.cal-viewport-inner {
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  zoom: 1;
+}
+
+.availability-states .form-type-radio input, .availability-states .form-type-radio label {
+float:none;
+}
+
+.node-availabilitycalendar .cal-month {
+	margin: 0px !important;
+	padding: 0 6px 4px !important;
+	width: 196px !important;
+	height: 215px !important;
+}
