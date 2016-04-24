@@ -7,6 +7,12 @@ function touch_html_head_alter(&$head_elements) {
   $head_elements['system_meta_content_type']['#attributes'] = array(
     'charset' => 'utf-8'
   );
+  
+  // Add responsive functionality to calendar 
+  $uri = $_SERVER['REQUEST_URI'];
+  if(($uri == '/') or (substr($uri, 0, 5) == '/node') or (substr($uri, 0, 9) == '/calendar') or (substr($uri, 0, 29) == '/create-availability-calendar')) {
+    drupal_add_js(drupal_get_path('theme', 'touch') . '/js/responsivecalendar.js', array('type' => 'file','group' => JS_THEME,));
+  }
 }
 
 /**

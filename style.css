@@ -209,6 +209,7 @@ clear: both;
 margin: 0 auto;
 padding: 0;
 width: 660px;
+position: relative;
 }
 
 /* Header Top
@@ -1088,4 +1089,210 @@ margin-top: 11px;}
 .registerbutton:active {
 	position:relative;
 	top:1px;
+}
+
+/* Advertising block */
+.col-a {
+  position: absolute;
+  top: 137px;
+  right: -183px; 
+}
+@media screen and (max-width: 1027px) {
+  .col-a {
+    display: none;
+  }
+}
+
+/* Add responsiveness */
+@media screen and (max-width: 760px) {
+  body, #wrapper, #header-top, #main-menu, #content-body, #footer {
+      width: 100%;
+      padding: 0;
+      border-right: 0;
+      border-left: 0;
+  }
+  
+  #main {
+    padding: 0 10px;
+    display: block;
+  }
+  
+  .cal-viewport {
+    width: 100%!important;
+  }
+}
+
+.full .main-menu .menu {
+  display: block!important!;
+}
+
+@media screen and (max-width: 619px) {
+  #header {
+    width: 100%;
+  }
+  
+  #main-menu {
+    position: absolute;
+    top: 70px;
+  }
+
+  #main-menu .menu {
+    display: none;
+    background: #4880AD;
+    margin-top: 35px;
+    position: absolute;
+    width: 100%;
+  }
+
+  #main-menu .menu li { 
+    display: block;
+    width: 100%;
+    text-align: center;
+   }
+}
+
+#header.adaptive {
+  width: 100%!important;
+  margin-top: 0!important;
+}
+  
+.adaptive #main-menu {
+  position: absolute;
+  top: 70px;
+}
+
+.adaptive #main-menu .menu {
+  display: none;
+  background: #4880AD;
+  margin-top: 35px;
+  position: absolute;
+  width: 100%;
+}
+
+.adaptive #main-menu .menu li { 
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.adaptive #main-menu ul li a:link, 
+.adaptive #main-menu ul li a:visited {
+  color: #fff!important;
+  font-size: 14px!important;
+  padding: 10px 14px!important;
+}
+
+@media screen and (min-width: 620px) {
+  #main-menu.full .menu {
+    display: block!important;
+  }
+}
+
+/* Restyle desktop */
+#header-top {
+  margin: 0;
+  width: 30%;
+  float: left;
+}
+
+#main-menu {
+  width: 100%;
+  background: transparent;
+}
+
+input#edit-title {
+  max-width: 95%;
+}
+
+@media screen and (min-width: 620px) {
+  #header {
+    float: left;
+    width: 70%;
+    margin-top: 50px;
+  }
+  
+  #main-menu ul {
+      float: right;
+  }
+
+  #main-menu ul li {
+    padding: 0 9px;
+  }
+  
+  #main-menu ul li a:link, 
+  #main-menu ul li a:visited {
+    color: #296798;
+    font-size: 16px;
+    padding: 0;
+  }
+}
+
+#header.full {
+  float: left;
+  width: 70%;
+  margin-top: 50px;
+}
+
+.full #main-menu ul {
+    float: right;
+}
+
+.full #main-menu ul li {
+  padding: 0 9px;
+}
+
+.full #main-menu ul li a:link, 
+.full #main-menu ul li a:visited {
+  color: #296798;
+  font-size: 16px;
+  padding: 0;
+}
+
+@media screen and (min-width: 761px) {
+  #main-menu ul li.last {
+    padding-right: 0;
+  }
+}  
+
+#navbar-toggle {
+  position: absolute;
+  right: 0;
+  padding: 9px 10px;
+  margin: 0 5px 0 0;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 4px;
+}
+
+.adaptive #main-menu #navbar-toggle {
+  display: block!important;
+}
+
+.adaptive #main-menu .menu {
+  display: none;
+}
+
+@media screen and (min-width: 620px) {
+  #navbar-toggle {
+    display: none;
+  }
+ 
+  #main-menu ul li.last {
+    background: url(images/lock.png) 0 45% no-repeat;
+  }
+ 
+}
+
+#navbar-toggle:hover {
+  cursor: pointer;
+}
+
+.icon-bar {
+  background-color: #296798;
+  height: 3px;
+  border-radius: 0;
+  display: block;
+  width: 22px;
+  margin: 3px 0;
 }

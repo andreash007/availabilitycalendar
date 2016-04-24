@@ -5,6 +5,9 @@ core = 7.x
 engine = phptemplate
 stylesheets[all][] = style.css
 scripts[] = js/scrolltopcontrol.js
+scripts[] = js/responsivemenu.js
+
+regions[advertising]    = Advertising
 regions[search_box]     = Search Box
 regions[sidebar_first]  = First Sidebar
 regions[sidebar_second] = Second Sidebar
