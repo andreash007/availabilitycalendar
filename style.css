@@ -119,12 +119,12 @@ padding: 0;
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: normal;
-  margin-top: 0.4em;
+  margin-top: 10px;
 }
 
 h1, .h1 {
-  font-size: 2em;
-  line-height: 1.5385;
+/*   font-size: 2em;
+  line-height: 1.5385; */
   }
 
 h2, .h2 {
@@ -222,8 +222,8 @@ width: 660px;
 #header-top #logo {
 float: left;
 width: 200px;
-margin-top: 35px;
-margin-bottom: 30px;
+margin-top: 30px;
+margin-bottom: 25px;
 }
 #header-top #site-slogan {
   margin: 0;
@@ -276,8 +276,8 @@ width: 660px;
 clear: both;
 background: #296798;
 height: 38px;
-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-size: 14px;
+font-family: 'Open Sans', sans-serif;
+font-size: 18px;
 border-radius: 4px;
 position: relative;
 }
@@ -457,7 +457,6 @@ border: 1px solid #dbdbdb;
 /* main post content
 ------------------------------------------------*/
 #main {
-  display: inline;
   margin: 0;
 }
 
@@ -551,10 +550,13 @@ body.sidebar-second #sidebar-second {
 
 /* Node / post content
 ------------------------------------------------*/
-.title{
+.title, h1.title {
 font-size: 22px;
 font-family: 'Open Sans', sans-serif;
 color: #000;
+}
+h1.title {
+margin-top: 16px;
 }
 .title a{
 color: #000;
@@ -908,7 +910,7 @@ margin-bottom: 10px;
 }
 
 #comments  h2{
-  padding-left: 5px;
+  display: none;
 }
 
 .comment {
@@ -1094,7 +1096,7 @@ margin-top: 11px;}
 /* Advertising block */
 .col-a {
   position: absolute;
-  top: 137px;
+  top: 127px;
   right: -183px; 
 }
 @media screen and (max-width: 1027px) {
@@ -1158,13 +1160,13 @@ margin-top: 11px;}
   
 .adaptive #main-menu {
   position: absolute;
-  top: 70px;
+  top: 60px;
 }
 
 .adaptive #main-menu .menu {
   display: none;
   background: #4880AD;
-  margin-top: 35px;
+  margin-top: 45px;
   position: absolute;
   width: 100%;
 }
@@ -1193,6 +1195,8 @@ margin-top: 11px;}
   margin: 0;
   width: 30%;
   float: left;
+  z-index: 999;
+  position: relative;
 }
 
 #main-menu {
@@ -1216,14 +1220,17 @@ input#edit-title {
   }
 
   #main-menu ul li {
-    padding: 0 9px;
+    padding: 0 11px;
   }
   
   #main-menu ul li a:link, 
   #main-menu ul li a:visited {
     color: #296798;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0;
+  }
+  #main-menu ul li a:hover {
+	text-decoration: underline;
   }
 }
 
@@ -1238,13 +1245,13 @@ input#edit-title {
 }
 
 .full #main-menu ul li {
-  padding: 0 9px;
+  padding: 0 11px;
 }
 
 .full #main-menu ul li a:link, 
 .full #main-menu ul li a:visited {
   color: #296798;
-  font-size: 16px;
+  font-size: 18px;
   padding: 0;
 }
 
@@ -1276,10 +1283,6 @@ input#edit-title {
 @media screen and (min-width: 620px) {
   #navbar-toggle {
     display: none;
-  }
- 
-  #main-menu ul li.last {
-    background: url(images/lock.png) 0 45% no-repeat;
   }
  
 }
